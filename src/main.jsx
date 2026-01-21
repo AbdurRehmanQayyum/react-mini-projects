@@ -1,6 +1,13 @@
 import { createRoot } from "react-dom/client";
+import logo from "./assets/images/react-img.png";
+
+
+ 
+
 const root = createRoot(document.getElementById("root"))
 
 root.render(
-    <h1>This is a Static React Page Made in React JS</h1>
+
+
+    <img src={logo} alt="Logo" />
 )
