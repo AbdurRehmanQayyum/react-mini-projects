@@ -6,7 +6,12 @@ import "./index.css";
 const root = createRoot(document.getElementById("root"))
 
 root.render( 
-    <main>
+    <CustomComp />
+)
+
+function CustomComp() {
+    return (
+        <main>
     <img src={logo} width="90px" alt="Logo" />
     <h1>Fun Facts About React!</h1>
     <ul>
@@ -17,4 +22,5 @@ root.render(
         <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ul>
     </main>
-)
+    );
+}
